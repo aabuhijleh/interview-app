@@ -23,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +47,8 @@
   },
   "devDependencies": {
     "@types/parse-link-header": "^1.0.0",
-    "@types/styled-components": "^5.1.10"
-  }
+    "@types/styled-components": "^5.1.10",
+    "gh-pages": "^3.2.2"
+  },
+  "homepage": "https://aabuhijleh.github.io/interview-app"
 }
